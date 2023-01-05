@@ -1,0 +1,64 @@
+@import url("..\Shared Files\utilities.css");
+.text{
+    flex-direction: column;
+    color: white;
+    width: 28rem;
+    height: 22rem;
+    margin: 5rem 8rem;
+    gap: 2rem;
+}
+.subH1{
+    letter-spacing: 4.72px;
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.775);
+    
+}
+.BodyText{
+    /* width: 80%; */
+    line-height: 32px;
+}
+
+@keyframes CircleAnimation {
+    0%{opacity: 0;}
+    20%{opacity: 0.2;}
+    40%{opacity: 0.4;}
+    60%{opacity: 0.6;}
+    80%{opacity: 0.8;}
+    100%{opacity: 0.2;}
+}
+.circleWrap{
+    position: relative;
+    left: 7rem;
+    top: 6rem;
+    justify-content: center;
+    align-items: center;
+    height: 28.125rem;
+    width: 28.125rem;
+    border-radius: 100%;
+    
+}
+.circle{
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    height: 17.125rem;
+    width: 17.125rem;
+    border-radius: 100%;
+    z-index: 1;
+}
+.HoverCircle{
+    position: absolute;
+    height: 28.125rem;
+    width: 28.125rem;
+    border-radius: 100%;
+    animation: CircleAnimation 1s ease-in-out;
+}
+
+.circle:hover ~ .HoverCircle{
+    background: var(--CircleHoover);
+}
+
+
+

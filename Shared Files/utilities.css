@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700&display=swap');*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --black: #0B0D17;
+    --GreyGreen: #d0d6f9;
+    --LightGray: #979797;
+    --NavBg: rgb(151, 151, 151, 0.1);
+    --CircleHoover: rgb(151, 151, 151, 0.2);
+    --HeaderLine: rgb(151, 151, 151, 0.3);
+}
+.flex{
+    display: flex;
+}
+.hidden{
+    display: none;
+}
+/* Responsive Backgrounds:  */
+.home-bg{
+    background-image: url('../assets/home/background-home-desktop.jpg');
+    background-size: cover;
+    min-height: 100%;
+}
+@media only screen and (width<=800px) {
+    .home-bg{
+        background-image: url('../assets/home/background-home-tablet.jpg');
+        background-size: cover;
+
+    }
+}
+@media only screen and (width<=400px) {
+    .home-bg{
+        background-image: url('../assets/home/background-home-mobile.jpg');
+        background-size: cover;
+
+    }
+}
+/*! styling the header as its same for every file:  */
+.logoWrapper{
+    background-color: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    margin: 4rem 55px;
+}
+.headerLine{
+    position: relative;
+    color: var(--LightGray);
+    border-bottom: 1px solid var(--HeaderLine);
+    height: 1px;
+    width: 31rem;
+    margin: 5.25rem 0;
+    z-index: 1;
+}
+.navItems li{
+    cursor: pointer;
+    list-style-type: none;
+    gap: 0.5rem;
+}
+/* !This makes the current page nav item active:  */
+.navItems{
+    position: absolute;
+    right: 0%;
+    background-color: var(--NavBg);
+    color: white;
+    backdrop-filter: blur(0.7rem);
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    height: 6rem;
+    width: 56rem;
+    margin: 40px 0;
+    font-size: 16px;
+    font-family: 'Barlow Condensed', serif;
+    letter-spacing: 2.7px;
+    z-index: 0;
+    text-transform: uppercase;
+
+}
+.navItems a{
+    font-weight: 200;
+    color: white;
+    text-decoration: none;
+}
+.navItems p{
+    list-style-type: none;
+    font-weight: bold;
+}
+.active{
+    line-height: 6rem;
+    border-bottom: 2px solid white;
+}
+.navItems .hover:hover{
+    line-height: 6rem;
+    border-bottom: 2px solid rgb(255, 255, 255,0.5);
+}
+
+/* *Classes for font styling:  */
+/* .font-bellefair{
+    font-family: 'Bellefair', serif;
+}
+.font-barlow{
+    font-family: 'Barlow Condensed', sans-serif;
+} */
+h1{
+    font-size: 150px;
+    font-weight: 200;
+    text-transform: uppercase;
+    font-family: 'Bellefair', serif;
+    text-transform: uppercase;
+
+}
+h2{
+    font-size: 100px;
+    font-family: 'Bellefair', serif;
+    text-transform: uppercase;
+
+}
+h3{
+    font-size: 56px;
+    font-family: 'Bellefair', serif;
+    text-transform: uppercase;
+
+}
+h4{
+    font-size: 32px;
+    font-weight: 100;
+    font-family: 'Bellefair', serif;
+    text-transform: uppercase;
+
+}
+h5{
+    font-size: 28px;
+    letter-spacing: 4.75px;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+
+}
+.subH1{
+    font-size: 28px;
+    font-family: 'Bellefair', serif;
+    text-transform: uppercase;
+
+}
+.subH2{
+    font-size: 14px;
+    letter-spacing: 2.35px;
+    font-family: 'Barlow Condensed', serif;
+    text-transform: uppercase;
+
+}
+.BodyText{
+    font-size: 18px;
+    font-family: 'Barlow Condensed', serif;
+    color: var(--LightGray);
+
+}
