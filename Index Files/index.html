@@ -27,8 +27,14 @@
             </g>
           </svg>
         </div>
+        <div class="hamMenuWrapper hidden">
+          <svg class="HamMenu" xmlns="http://www.w3.org/2000/svg" width="24" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg>
+        </div>
         <div class="headerLine"></div>
-        <ul class="flex navItems">
+        <ul class="flex navItems ">
+          <li class="hamburger-close-wrapper hidden">
+            <svg class="MenuClose" xmlns="http://www.w3.org/2000/svg" width="20" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/><path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/></g></svg>
+          </li>
           <li class="flex active">
             <p>00</p>
             <a href="./index.html">Home</a>
@@ -49,7 +55,7 @@
       </nav>
     </header>
     <main class="flex">
-      <div class="text flex">
+      <div class="textWrapper flex">
         <p class="subH1">So, you want to travel to</p>
         <h1>Space</h1>
         <p class="BodyText">
@@ -58,7 +64,7 @@
           because we’ll give you a truly out of this world experience!</p>
       </div>
       <div class="circleWrap flex">
-        <div class="circle flex"><h4>Explore</h4></div>
+        <div class="circle flex"><h4 class="text-black">Explore</h4></div>
         <div class="HoverCircle"></div>
       </div>
     </main>
@@ -72,4 +78,5 @@
 
   Explore -->
   </body>
+  <script src="../Shared Files/menu.js"></script>
 </html>

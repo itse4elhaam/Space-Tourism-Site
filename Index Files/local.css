@@ -1,5 +1,5 @@
 @import url("..\Shared Files\utilities.css");
-.text{
+.textWrapper{
     flex-direction: column;
     color: white;
     width: 28rem;
@@ -53,12 +53,72 @@
     height: 28.125rem;
     width: 28.125rem;
     border-radius: 100%;
-    animation: CircleAnimation 1s ease-in-out;
+    animation: CircleAnimation 4s ease-in-out;
 }
 
 .circle:hover ~ .HoverCircle{
     background: var(--CircleHoover);
 }
 
+@media only screen and (width<=900px) {
+    .home-bg{
+        background-image: url('../assets/home/background-home-tablet.jpg');
+        background-size: cover;
+        overflow: hidden;
+
+    }
+    main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .circleWrap{
+        position: static;
+    }
+}
+@media only screen and (width<=600px) {
+    .home-bg{
+        background-image: url('../assets/home/background-home-mobile.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .textWrapper{
+        gap: 1rem;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        width: 22rem;
+    }
+    h1{
+        font-size: 5rem;
+    }
+    .subH1{
+        font-size: 0.8rem;
+        letter-spacing: 2.7px;
+    }
+    .BodyText{
+        line-height: 28px;
+        color: var(--GreyGreen);
+        padding: 0 1.5rem;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .HoverCircle{
+        display: none;
+    }
+    .circle{
+        height: 10rem;
+        width: 10rem;
+    }
+    .circleWrap{
+        align-items: unset;
+        height: 10rem;
+        width: 10rem;
+        margin: -1rem 0;
+    }
+    .circle h4{
+        font-size: 20px;
+    }
+}
 
 

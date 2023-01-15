@@ -1,0 +1,81 @@
+.TechBg{
+    background-image: url(../assets/technology/background-technology-desktop.jpg);
+    background-size: cover;
+}
+.HeadingWrapper{
+    margin: 1.5rem 12rem;
+}
+.HeadingWrapper span{
+    color: rgb(255, 255, 255,0.5);
+    padding-right: 0.5rem;
+}
+.RoundNums{
+    flex-direction: column;
+    gap: 1.75rem;
+    margin: 4rem 12rem;
+    margin-right: 4rem;
+}
+.RoundNums a{
+    width: 4rem;
+    aspect-ratio: 1 / 1;
+    border: 2px solid rgb(255, 255, 255,0.15);
+    border-radius: 50%;
+    transition: all 500ms;
+}
+.RoundNums p{
+    text-align: center;
+    line-height: 4rem;
+}
+.BorderEffect:hover{
+    border: 2px solid rgba(255, 255, 255, 0.814);
+    border-radius: 50%;
+}
+.WhiteEffect{
+    color: black;
+    background-color: white;
+}
+.textContainer{
+    flex-direction: column;
+    gap: 1rem;
+    margin: 4rem 0;
+    /* border: 1px solid rebeccapurple; */
+}
+.subH2{
+    color: rgba(255, 255, 255, 0.353);
+}
+.BodyText{
+    width: 65%;
+    line-height: 1.75rem;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+.ImgTextWrapper{
+    height: max-content;
+    /* border: 1px solid red; */
+}
+.imgWrapper{
+    position: relative;
+    bottom: 8vh;
+    /* margin: 2rem 0; */
+}
+.imgWrapper img{
+    width: 33vw;
+    filter: saturate(4);
+}
+
+
+
+
+
+@media screen and(width<=900px) {
+    .TechBg{
+        background-image: url(../assets/technology/background-technology-tablet.jpg);
+        background-size: cover;
+    }
+}
+@media screen and(width<=600px) {
+    .TechBg{
+        background-image: url(../assets/technology/background-technology-mobile.jpg);
+        background-size: cover;
+    }
+}

@@ -1,0 +1,86 @@
+.crewBg{
+    background-image: url(../assets/crew/background-crew-desktop.jpg);
+    background-size: cover;
+}
+/* *created two wrappers due to design: */
+.TextSliderWrapper{
+    width: 120%;
+    height: 50%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+    margin: 0;
+}
+.childWrapper{
+    max-width: 77%;
+    flex-direction: column;
+    gap: 7rem;
+    justify-content: center;
+}
+.MeetYourCrewWrapper{
+    color: white;
+    font-weight: 200;
+    /* margin: 2rem 16rem; */
+}
+ .MeetYourCrewWrapper span {
+    margin-right: 4px;
+    opacity: 0.4;
+}
+
+.mainText{
+    flex-direction: column;
+    gap: 2rem;
+}
+h4{
+    color: rgb(151, 151, 151, 0.5);
+}
+.BodyText{
+    opacity: 0.8;
+    width: 55%;
+    letter-spacing: 1.55px;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+}
+.SliderWrapper{
+    gap: 1rem;
+}
+.SliderWrapper a{
+    background-color: rgb(255, 255, 255,0.1);
+    width: 0.85rem;
+    height: 0.85rem;
+    border-radius: 50%;
+}
+.SliderWrapper .aHover:hover{
+    background-color: rgb(255, 255, 255,0.5);
+    scale: 1.05;
+}
+.current{
+    background-color: white !important;
+    scale: 1.15;
+}
+.imgWrapper{
+    position: absolute;
+    left: 60%;
+    bottom: 0;
+}
+.imgWrapper img{
+    width: 79%;
+}
+
+
+
+
+
+@media screen and (width<=900) {
+    .crewBg{
+        background-image: url(../assets/crew/background-crew-tablet.jpg);
+        background-size: cover;
+    }
+}
+@media screen and (width<=600) {
+    .crewBg{
+        background-image: url(../assets/crew/background-crew-mobile.jpg);
+        background-size: cover;
+    }
+}

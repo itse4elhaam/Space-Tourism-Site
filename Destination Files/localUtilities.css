@@ -1,0 +1,172 @@
+.destination-bg{
+    background-image: url(../assets/destination/background-destination-desktop.jpg);
+    background-size: cover;
+}
+ .PickYourDestWrapper{
+    color: white;
+    font-weight: 300;
+    margin: 0rem 16rem;
+    width: 24rem;
+}
+ .destination-bg span {
+    margin-right: 4px;
+    opacity: 0.4;
+}
+ .destination-bg h5{
+    font-size: 1.4rem;
+}
+ .PlanetWrapper{
+    margin: 6rem 0 0 20rem;
+}
+.textContainer{
+    text-align: left;
+    width: 100%;
+    height: 66vh;
+    flex-direction: column;
+    gap: 2.5rem;
+    /* border: 1px solid red; */
+    margin: 3rem;
+}
+.PlanetsMenu{
+    gap: 2rem;
+    /* border: 1px solid red; */
+}
+.MenuLine{
+    opacity: 0.2;
+    height: 1px;
+    width: 100%;
+    border-bottom: 1px solid white;
+
+}
+.BodyText{
+    color: rgb(255, 255, 255,0.65);
+    line-height: 32px;
+    width: 77%;
+}
+.distanceTimeWrapper{
+    width: 95%;
+    gap: 4.5rem;
+    margin: 0.5rem;
+}
+.distanceTimeWrapper p{
+    opacity: 0.5;
+}
+.distanceTimeWrapper h5{
+    font-weight: 200;
+    font-size: 1.8rem;
+}
+.hover:hover{
+    opacity: 1;
+    line-height: normal;
+    border-bottom: 2px solid rgb(255, 255, 255,0.5);
+
+}
+.PlanetsMenu .active{
+    line-height: 8px;
+    border-width: 4px;
+    padding-bottom: 0.75rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Making everything responsive:  */
+@media screen and (width<=900px) {
+    .destination-bg{
+        background-image: url(../assets/destination/background-destination-tablet.jpg);
+        background-size: cover;
+    }
+    /* *{
+        overflow-x: hidden;
+        border: 1px solid snow;
+    } */
+    /* .navItems{
+        border: 1px solid snow;
+    } */
+    
+    .PickYourDestWrapper{
+        display: flex;
+        justify-content: flex-start;
+        margin: 1.5rem;
+        padding-left: 2rem;
+    }
+    .PlanetWrapper{
+        margin: 4rem 0 2.75rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .PlanetWrapper img{
+        width: 300px;
+        height: 300px;
+    }
+    main{
+        flex-direction: column;
+    }
+    .textContainer{
+    
+        overflow: hidden;
+        text-align: center;
+        width: 80vw;
+        margin: 0;
+        height: max-content;
+        /* border: 1px solid snow; */
+        margin: auto;
+    }
+    .PlanetsMenu{
+        justify-content: center;
+    }
+    h2{
+        font-size:80px;
+    }
+    .BodyText{
+        font-size: 16px;
+        width: 85%;
+        margin: auto;
+    }
+    .MenuLine{
+        margin: 0 auto;
+        width: 80%;
+    }
+    .distanceTimeWrapper{
+        justify-content: center;
+    }
+}
+@media screen and (width<=600px) {
+    .destination-bg{
+        background-image: url(../assets/destination/background-destination-mobile.jpg);
+    }
+    .PickYourDestWrapper{
+        text-align: center;
+        transform: scale(0.75);
+        padding-left: 0;
+        width: max-content;
+    }
+    .PlanetWrapper img{
+        width: 170px;
+        height: 170px;
+    }
+    .PlanetsMenu{
+        transform: scale(0.9);
+    }
+    h2{
+        font-size: 56px;
+    }
+    .BodyText{
+        width: 92%;
+    }
+    .MenuLine{
+        width: 90vw;
+    }
+    .distanceTimeWrapper{
+        flex-direction: column;
+    }
+}

@@ -3,35 +3,111 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="../Shared Files/utilities.css" />
+  <link rel="stylesheet" href="./localUtilities.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
   <title>Frontend Mentor | Space tourism website</title>
 </head>
-<body>
+<body class="destination-bg">
+  <header>
+    <nav class="flex">
+      <div class="logoWrapper">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+          <g fill="none" fill-rule="evenodd">
+            <circle cx="24" cy="24" r="24" fill="#FFF" />
+            <path
+              fill="#0B0D17"
+              d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"
+            />
+          </g>
+        </svg>
+      </div>
+      <div class="hamMenuWrapper hidden">
+        <svg class="HamMenu" xmlns="http://www.w3.org/2000/svg" width="24" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg>
+      </div>
+      <div class="headerLine"></div>
+      <ul class="flex navItems ">
+        <li class="hamburger-close-wrapper hidden">
+          <svg class="MenuClose" xmlns="http://www.w3.org/2000/svg" width="20" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M2.575.954l16.97 16.97-2.12 2.122L.455 3.076z"/><path d="M.454 17.925L17.424.955l2.122 2.12-16.97 16.97z"/></g></svg>
+        </li>
+        <li class="flex hover">
+          <p>00</p>
+          <a href="../Index Files/index.html">Home</a>
+        </li>
+        <li class="flex active"> 
+          <p>01</p>
+          <a href="../Destination Files/destination-moon.html">Destination</a>
+        </li>
+        <li class="flex hover">
+          <p>02</p>
+          <a href="../Crew Files/crew-commander.html">Crew</a>
+        </li>
+        <li class="flex hover">
+          <p>03</p>
+          <a href="../Tech Files/technology-vehicle.html">Technology</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="flex">
+    <section>
+      <div class="PickYourDestWrapper">
+        <h5><span>01</span> Pick your destination</h5>
+      </div>
+      <div class="PlanetWrapper">
+        <img src="../assets/destination/image-moon.png" alt="Moon Image">
+      </div>
+    </section>
+    <section class="textContainer flex">
+      <ul class="flex PlanetsMenu subH2">
+        <li class="active"><a href="./destination-moon.html">Moon</a></li>
+        <li class="hover"><a href="./destination-mars.html">Mars</a></li>
+        <li class="hover"><a href="./destination-europa.html">Europa</a></li>
+        <li class="hover"><a href="./destination-titan.html">Titan</a></li>
+      </ul>
+      <h2>Moon</h2>
+      <p class="BodyText">
+        See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+        regain perspective and come back refreshed. While you’re there, take in some history 
+        by visiting the Luna 2 and Apollo 11 landing sites.</p>
+        <div class="MenuLine"></div>
+        <div class="distanceTimeWrapper flex">
+          <div class="distance">
+            <p class="subH2">Avg. distance</p>
+            <h5>384,400 km</h5>
+          </div>
+          <div class="time">
+            <p class="subH2">Est. travel time</p>
+            <h5>3 Days</h5>
+          </div>
+        </div>
+    </section>
+  </main>
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+  
+</body>
+<script src="../Shared Files/menu.js"></script>
+</html>
 
-  01 Pick your destination
 
-  Moon
-  Mars
-  Europa
-  Titan
 
-  Moon
 
-  See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-  regain perspective and come back refreshed. While you’re there, take in some history 
-  by visiting the Luna 2 and Apollo 11 landing sites.
+
+
+
+
+
+
+
+
+<!-- *DUMP -->
+<!-- 01 Pick your destination
+
+
 
   Avg. distance
   384,400 km
 
   Est. travel time
-  3 days
-</body>
-</html>
+  3 days -->
