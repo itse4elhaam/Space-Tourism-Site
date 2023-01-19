@@ -72,15 +72,53 @@ h4{
 
 
 
-@media screen and (width<=900) {
+@media screen and (width<=900px) {
     .crewBg{
         background-image: url(../assets/crew/background-crew-tablet.jpg);
         background-size: cover;
+        background-blend-mode: darken;
+    } 
+    .MeetYourCrewWrapper{
+        position: relative;
+        left: -7vw;
+        margin: 2rem 0;
     }
+    .childWrapper {
+        gap: 2rem;
+    }
+    .mainText {
+        gap: 1rem;
+        text-align: center;
+    }
+    .BodyText{
+        width: 100%;
+    }
+    .SliderWrapper{
+        justify-content: center;
+        gap: 0.75rem;
+    }
+    .SliderWrapper a{
+        scale: 0.75;
+    }
+    .imgWrapper{
+        left: 50%;
+        margin: 0 -25%;
+    }
+    
 }
-@media screen and (width<=600) {
+@media screen and (width<=600px) {
     .crewBg{
         background-image: url(../assets/crew/background-crew-mobile.jpg);
         background-size: cover;
+        background-repeat: no-repeat;
+    }
+    main {
+        flex-direction: column-reverse;
+    }
+    .imgWrapper{
+        position: static;
+    }
+    .imgWrapper img{
+        width: 15rem;
     }
 }

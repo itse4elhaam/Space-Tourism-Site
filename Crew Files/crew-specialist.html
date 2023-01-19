@@ -59,7 +59,7 @@
         <div class="mainText flex">
           <h4> Mission Specialist</h4>
           <h3>Mark Shuttleworth</h3>
-          <p class="BodyText" style="width: 55%;">Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
+          <p class="BodyText" >Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind 
             the Linux-based Ubuntu operating system. Shuttleworth became the first South 
             African to travel to space as a space tourist.</p>
         </div>
@@ -76,9 +76,21 @@
       <img src="../assets/crew/image-mark-shuttleworth.png" alt="">
     </section>
   </main>
-
+  <style>
+    @media screen and (width<=600px) {
+      h3{
+      width: max-content;
+    }
+    .BodyText{
+      width: 100%;
+    }
+    .imgWrapper img{
+      max-width: 30rem;
+    }
+    }
+  </style>
 </body>
-<script src="../Shared Files//menu.js"></script>
+<script src="../Shared Files/menu.js"></script>
 </html>
 
 

@@ -83,7 +83,6 @@ a{
     letter-spacing: 2.7px;
     z-index: 0;
     text-transform: uppercase;
-    transition: all 750ms;
 
 }
 
@@ -160,6 +159,7 @@ h5{
 
 }
 .BodyText{
+    text-align: center;
     font-size: 18px;
     font-family: 'Barlow Condensed', serif;
     color: var(--LightGray);
@@ -238,7 +238,7 @@ h5{
     .hamburger-close-wrapper{
         z-index: 3;
         position: relative;
-        right: -7rem;
+        right: -23vw;
         display: block !important;
         margin: 1.5rem;
         

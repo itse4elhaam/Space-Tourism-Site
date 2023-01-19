@@ -67,15 +67,89 @@
 
 
 
-@media screen and(width<=900px) {
+@media only screen and (width<=900px) {
     .TechBg{
         background-image: url(../assets/technology/background-technology-tablet.jpg);
         background-size: cover;
     }
+    /* .hidden{
+        display: none;
+    } */
+    .HeadingWrapper {
+        margin: 1.5rem 2rem;
+    }
+    .ImgTextWrapper{
+        flex-direction: column-reverse;
+    }
+    .RoundNums{
+        margin: 3rem 0 0 0;
+        
+        flex-direction: row;
+        line-height: normal;
+        justify-content: center;
+    }
+    .textWrapper{
+        flex-direction: column;
+    }
+    .textContainer{
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+    .RoundNums a{
+        height: 4rem;
+    }
+    .imgWrapper{
+        flex-direction: column;
+        bottom: -2vh;
+    }
+    .imgWrapper img:first-child{
+        display: none;
+    }
+    .imgWrapper img:nth-child(2){
+        display: inline !important;
+        width: 100vw;
+    }
+    .subH2{
+        font-size: 17px;
+    }
+    h3{
+        font-size: 40px;
+    }
+    h5{
+        font-size: 1.5rem;
+    }
+    .BodyText{
+        width: 65%;
+    }
 }
-@media screen and(width<=600px) {
+@media only screen and (width<=450px) {
     .TechBg{
+        width: 100vw;
         background-image: url(../assets/technology/background-technology-mobile.jpg);
         background-size: cover;
     }
+    .RoundNums a{
+        width: 3rem;
+        height: 3rem;
+    }
+    .RoundNums p{
+        line-height: 3rem;
+        font-size: 1.25rem;
+    }
+    h3{
+        font-size: 30px;
+    }
+    h5{
+        font-size: 1.25rem;
+    }
+    .textContainer{
+        gap:1rem;
+        margin: 2rem 0;
+    }
+    .BodyText{
+        width: 85%;
+        font-size: 14px;
+    }
+
 }
