@@ -18,14 +18,6 @@
     line-height: 32px;
 }
 
-@keyframes CircleAnimation {
-    0%{opacity: 0;}
-    20%{opacity: 0.2;}
-    40%{opacity: 0.4;}
-    60%{opacity: 0.6;}
-    80%{opacity: 0.8;}
-    100%{opacity: 0.2;}
-}
 .circleWrap{
     position: relative;
     left: 7rem;
@@ -53,7 +45,16 @@
     height: 28.125rem;
     width: 28.125rem;
     border-radius: 100%;
-    animation: CircleAnimation 4s ease-in-out;
+    animation: CircleAnimation 4s ease-in-out forwards;
+}
+
+@keyframes CircleAnimation {
+    0%{opacity: 0;}
+    20%{opacity: 0;}
+    40%{opacity: 0.25;}
+    60%{opacity: 0.5;}
+    80%{opacity: 0.75;}
+    100%{opacity: 1;}
 }
 
 .circle:hover ~ .HoverCircle{
